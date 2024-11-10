@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Drawer</title>
+    <link rel="stylesheet" href="sorteio.css">
+</head>
+<body>
+    <main>
+        <div class="draw-form">
+            <h1>SORTEADOR</h1>
+            <form id="draw-form">
+                <div class="input-name">
+                    <input type="text" id="participants" name="participants" placeholder="Enter participant names (separated by commas)">
+                </div>
+                <br><br>
+                <div class="input-number">
+                    <input type="number" id="group-size" name="group-size" min="1" placeholder="Enter number of participants per group">
+                </div>
+                <br><br>
+                <div class="buttons-enter">
+                    <button id="sorteio-button" type="submit">Sortear</button>
+                    <button id="history-button" type="button">Histórico</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <div id="show-groups"></div>
+    <div id="show-history" style="display: none;">
+        <h2>Draw History</h2>
+        <ul id="draw-history"></ul>
+    </div>
+    <script src="sorteio.js"></script>
+</body>
+</html>
